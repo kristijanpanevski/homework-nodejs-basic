@@ -1,0 +1,20 @@
+[
+    {
+        "id": "336e92f7-6e9a-4937-b508-5ad3d6e1fd0f",
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "isCurrentlyTeaching": true,
+        "timeEmployed": "1 year 3 months",
+        "coursesFinished": 5
+    },
+    {
+        "id": "7825cdbd-155e-45f4-b36f-83d34d94f21e",
+        "firstName": "Emma",
+        "lastName": "Brown",
+        "email": "emma.brown@example.com",
+        "isCurrentlyTeaching": true,
+        "timeEmployed": "2 year",
+        "coursesFinished": 8
+    }
+]

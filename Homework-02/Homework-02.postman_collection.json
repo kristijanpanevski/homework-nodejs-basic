@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "b1b124a9-94e5-4094-afa8-43229bc01b57",
+		"name": "Homework-02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33623210"
+	},
+	"item": [
+		{
+			"name": "Create a trainer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Emma\",\r\n    \"lastName\": \"Brown\",\r\n    \"email\": \"emma.brown@example.com\",\r\n    \"isCurrentlyTeaching\": true,\r\n    \"timeEmployed\": \"1 year\",\r\n    \"coursesFinished\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/trainers/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all trainers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/trainers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get trainer by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/trainers/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "7825cdbd-155e-45f4-b36f-83d34d94f21e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update trainer info",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"timeEmployed\": \"2 year\",\r\n        \"coursesFinished\": 8\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trainers/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "7825cdbd-155e-45f4-b36f-83d34d94f21e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a trainer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trainers/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "bc537c0a-6593-484d-bbef-a267e6886b24"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all trainers",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"timeEmployed\": \"2 year\",\r\n        \"coursesFinished\": 8\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trainers/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trainers",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
