@@ -5,7 +5,7 @@ export const trainerRouter = Router();
 
 trainerRouter.get("/", TrainerController.getAllTrainers);
 trainerRouter.get("/:id", TrainerController.getTrainerById);
-// trainerRouter.post("/", TrainerController.createTrainer);
-// trainerRouter.put("/:id", TrainerController.updateTrainer);
-// trainerRouter.delete("/:id", TrainerController.deleteTrainer);
-// trainerRouter.delete("/", TrainerController.deleteAllTrainers);
+trainerRouter.post("/", TrainerController.createTrainer);
+trainerRouter.put("/:id", TrainerController.updateTrainer);
+trainerRouter.delete("/:id", TrainerController.deleteTrainer);
+trainerRouter.delete("/", TrainerController.deleteAllTrainers);

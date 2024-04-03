@@ -1,30 +1,24 @@
 [
   {
-    "id": "4b5ccfcc-a5da-425e-87ad-e05ca21a1dc3",
-    "firstName": "Update",
-    "lastName": "Updaterson",
-    "email": "test@gmail.com",
-    "age": 5994
-  },
-  {
-    "id": "e25173e9-498e-4354-9664-553e37dfbdb3",
-    "firstName": "Best",
-    "lastName": "Besterson",
-    "email": "best@gmail.com",
-    "age": 30
-  },
-  {
-    "id": "0ba6b4d5-6a24-4b6e-a20f-b40fbe33ed2b",
-    "firstName": "Best",
-    "lastName": "Besterson",
-    "email": "delete@gmail.com",
-    "age": 30
-  },
-  {
     "id": "ee960959-bca9-426a-a082-beab024b29ae",
     "firstName": "Best",
     "lastName": "Besterson",
     "email": "testerson@gmail.com",
     "age": 30
+  },
+  {
+    "id": "c4c8a459-78db-4bde-8290-f967613b15ff",
+    "firstName": "Emma",
+    "lastName": "Brown",
+    "email": "emma.brown@example.com"
+  },
+  {
+    "id": "d9aa257c-d08a-4edd-b1a5-83332a438f6b",
+    "firstName": "Emm",
+    "lastName": "Brown",
+    "email": "emm.brown@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "2 year",
+    "coursesFinished": 8
   }
 ]
